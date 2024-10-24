@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMÁGENES</title>
+    <link rel="icon" href="../Imagenes/icon.png" type="image/png">
+    <style>
+        body {
+            background-color: #828F4F;
+        }
+
+        div {
+            text-align: center;
+        }
+
+        #fotos {
+            width: 30%;
+            height: 30%;
+            object-fit: cover;
+            /*Esto es lo que hace que se ajuste sin distorsionarse */
+        }
+
+        a:link {
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: #F0BE4A;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #EAB457;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: #F0BE4A;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a {
+            font-family: "Trebuchet MS";
+        }
+
+        p.B {
+            color: #C46931;
+            text-align: center;
+        }
+
+        .navbar {
+            background-color: #C46931;
+            padding: 10px;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+
+        .navbar ul li a {
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            /* Align icon with text */
+            gap: 8px;
+            /* Space between icon and text */
+            padding: 8px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar ul li a img {
+            vertical-align: middle;
+        }
+
+        .navbar ul li a:hover {
+            color: #EAB457;
+            /* Yellow on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="../portafolio.html"><img src="../Imagenes/home.png" width="30"></a></li>
+            <li><a href="../about.html">ABOUT</a></li>
+        </ul>
+    </nav>
+    <div>
+        <img id="fotos" src="IMAGE1.png">
+        <img id="fotos" src="IMAGE2.png">
+        <img id="fotos" src="IMAGE3.png">
+    </div>
+
+    <p><a href="tabla1.html">IR A TABLA 1</a></p>
+    <p><a href="tabla2.html">IR A TABLA 2</a></p>
+    <br>
+    <p class="B"><a href="https://www.saatchiart.com/en-mx/art/Drawing-Autumn/1623859/7908230/view"> LINK IMG1</a></p>
+    <p class="B"><a href="https://www.saatchiart.com/en-mx/art/Painting-Magnificent-fall/2015631/10265827/view"> LINK
+            IMG2</a></p>
+    <p class="B"><a href="https://www.saatchiart.com/en-mx/art/Painting-When-the-autumn-colors-5/905341/3804817/view">
+            LINK IMG3</a></p>
+</body>
+
+</html>

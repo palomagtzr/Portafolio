@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <link rel="icon" href="../Imagenes/icon.png" type="image/png">
+    <link rel="stylesheet" href="../PortafolioEstilo.css">
+    <script type="text/javascript" src="toDoList.js"></script>
+    <style>
+        input {
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="../portafolio.html"><img src="../Imagenes/home.png" width="30"></a></li>
+            <li><a href="../about.html">ABOUT</a></li>
+        </ul>
+    </nav>
+    <h1>LISTA DE TAREAS</h1>
+    <h3>Añadir una nueva tarea: </h3>
+    <form action="">
+        Nombre de la tarea: <input type="text" id="newTask" required> <br><br>
+        Fecha de entrega: <input type="date" id="fecha">
+    </form><br>
+    <button type="button" onclick="agregar()">Agregar tarea</button>
+    <button type="button" onclick="borrar()">Borrar tabla</button>
+    <br>
+    <br>
+    <table id="tareas"></table>
+</body>
+
+</html>

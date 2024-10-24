@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calificación</title>
+    <script type="text/javascript" src="1_cali.js"></script>
+    <link rel="icon" href="../Imagenes/icon.png" type="image/png">
+    <link rel="stylesheet" href="../PortafolioEstilo.css">
+    <style>
+        body {
+            text-align: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="../portafolio.html"><img src="../Imagenes/home.png" width="30"></a></li>
+            <li><a href="../about.html">ABOUT</a></li>
+        </ul>
+    </nav>
+    <h1>REGISTRO DE CALIFICACIÓN</h1>
+    <h4>Ingrese su calificación en el siguiente espacio: </h4>
+    <input type="text" name="calificacion" id="cal"> <br><br>
+    <form>
+        <button type="button" onclick="cali()">Enviar Calificación</button>
+        <button type="button" onclick="borrar()">Volver a intentar</button>
+    </form>
+    <p id="res"></p>
+</body>
+
+</html>
