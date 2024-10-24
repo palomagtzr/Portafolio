@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms de Registro</title>
+    <script type="text/javascript" src="3_form.js"></script>
+    <link rel="icon" href="../Imagenes/icon.png" type="image/png">
+    <link rel="stylesheet" href="../PortafolioEstilo.css">
+    <style>
+        body {
+            text-align: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="../portafolio.html"><img src="../Imagenes/home.png" width="30"></a></li>
+            <li><a href="../about.html">ABOUT</a></li>
+        </ul>
+    </nav>
+    <h1>FORMULARIO PARA REGISTRO DE USUARIOS</h1>
+    <h2>Ingrese sus datos: </h2>
+    <form>
+        Nombre: <input type="text" name="nombre" id="name"> <br><br>
+        Correo: <input type="email" name="correo" id="mail"> <br><br>
+        Edad: <input type="number" name="edad" id="age"> <br><br>
+        <p>Género:</p>
+        <input type="radio" name="genero" id="male"> Masculino <br>
+        <input type="radio" name="genero" id="female"> Femenino<br>
+        <input type="radio" name="genero" id="Other"> No binario <br><br>
+        Fecha de nacimiento: <input type="date" name="nacimiento" id="birth"> <br><br>
+        Color favorito: <input type="color" name="color" id="colour"> <br><br>
+    </form>
+    <button type="button" onclick="registro()">Register</button><br>
+    <h4>DATOS REGISTRADOS: </h4>
+    <p id="res"></p>
+</body>
+
+</html>

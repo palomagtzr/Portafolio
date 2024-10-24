@@ -1,0 +1,99 @@
+body {
+    background-color: #828F4F;
+}
+
+table {
+    margin-top: 18%;
+    margin-left: 28%;
+}
+
+tr.row1 {
+    background-color: #EAB457;
+}
+
+tr.row2 {
+    background-color: #F0BE4A;
+}
+
+table,
+th,
+td {
+    font-family: "Trebuchet MS";
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 7px;
+    text-align: center;
+}
+
+tr.heading {
+    background-color: #c46931;
+    ;
+}
+
+a:link {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #F0BE4A;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #F0BE4A;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #F0BE4A;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a {
+    font-family: "Trebuchet MS";
+}
+
+.navbar {
+    background-color: #C46931;
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    /* Align icon with text */
+    gap: 8px;
+    /* Space between icon and text */
+    padding: 8px;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a img {
+    vertical-align: middle;
+}
+
+.navbar ul li a:hover {
+    color: #EAB457;
+    /* Yellow on hover */
+}

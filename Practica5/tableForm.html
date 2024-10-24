@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Form</title>
+    <link rel="stylesheet" href="tableForm.css">
+    <script type="text/javascript" src="tableForm.js"></script>
+    <link rel="icon" href="../Imagenes/icon.png" type="image/png">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="../portafolio.html"><img src="../Imagenes/home.png" width="30"></a></li>
+            <li><a href="../about.html">ABOUT</a></li>
+        </ul>
+    </nav>
+    <h1>Formulario de Inscripción a Membresía de Gimnasio</h1>
+    <form action="">
+        <h2>Ingresa tus datos: </h2>
+
+        Nombre completo: <input type="text" id="nombre" required> <br><br>
+        Correo electrónico: <input type="email" id="mail" required> <br>
+
+        <h4>Actividades de interés: </h4>
+        <input type="checkbox" id="gym" name="activity" value="Gimnasio">Gimnasio <br>
+        <input type="checkbox" id="spinning" name="activity" value="Spinning">Spinning<br>
+        <input type="checkbox" id="yoga" name="activity" value="Yoga">Yoga<br>
+        <input type="checkbox" id="pilates" name="activity" value="Pilates">Pilates<br>
+        <input type="checkbox" id="barre" name="activity" value="Barre">Barre<br>
+
+        <h4>Preferencia de pago: </h4>
+        <input type="radio" name="payment" id="dia" value="Diario">Diario <br>
+        <input type="radio" name="payment" id="mes" value="Mensual">Mensual <br>
+        <input type="radio" name="payment" id="trimestre" value="Trimestral">Trimestral <br>
+        <input type="radio" name="payment" id="año" value="Anual">Anual <br>
+
+        <h4>Fecha de inicio de membresía: </h4>
+        <input type="date" id="fecha" required>
+        <h4>Color de tarjeta de acceso: </h4>
+        <input type="color" id="credencial" required>
+        <h4>Frecuencia de asistencia (numero de días de la semana): </h4>
+        <input type="range" id="asistencia" min="0" max="7" step="1" value="0">
+        <span id="frecuencia"></span>
+    </form>
+    <button type="button" onclick="registrar()">Registrar</button>
+    <br>
+    <br>
+    <table id="miembros"></table>
+</body>
+
+</html>
